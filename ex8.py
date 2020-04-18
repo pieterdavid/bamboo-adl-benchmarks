@@ -3,7 +3,7 @@ from adl_benchmarks import IRISHEP_ADLBenchmark
 class Benchmark8(IRISHEP_ADLBenchmark):
     """ For events with at least three leptons and a same-flavor opposite-sign lepton pair, find the same-flavor opposite-sign lepton pair with the mass closest to 91.2 GeV and plot the transverse mass of the missing energy and the leading other lepton. """
     def definePlots(self, tree, noSel, sample=None, sampleCfg=None):
-        from bamboo.plots import Plot
+        from bamboo.plots import Plot, SummedPlot
         from bamboo.plots import EquidistantBinning as EqBin
         from bamboo import treefunctions as op
 
