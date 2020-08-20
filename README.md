@@ -1,8 +1,10 @@
-Implementation of the [IRIS-HEP ADL benchmarks](https://github.com/iris-hep/adl-benchmarks-index)
-using the [bamboo framework](https://gitlab.cern.ch/cp3-cms/bamboo).
+# Implementation of the [IRIS-HEP ADL benchmarks](https://github.com/iris-hep/adl-benchmarks-index) using the [bamboo](https://gitlab.cern.ch/cp3-cms/bamboo) framework
 
-After installing bamboo (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html), [plotIt](https://github.com/cp3-llbb/plotIt) is not required) these can be run with
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pieterdavid/bamboo-docker/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fpieterdavid%252Fbamboo-adl-benchmarks%26urlpath%3Dlab%252Ftree%252Fbamboo-adl-benchmarks%252Fex1.py%26branch%3Dmaster)
+
+These can be run on Binder through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html); [plotIt](https://github.com/cp3-llbb/plotIt) is not required) with:
 ```bash
+export PYTHONPATH=$PYTHONPATH:$(pwd) # to allow importing shared code from adl_benchmarks.py
 bambooRun -m exN.py:ADLBencharkN adl_benchmarks.yml -o out_N
 ```
 (replacing N by the numer of the benchmark).
