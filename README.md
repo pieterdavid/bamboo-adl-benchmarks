@@ -4,8 +4,9 @@
 
 These can be run on Binder through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html); [plotIt](https://github.com/cp3-llbb/plotIt) is not required) with:
 ```bash
+cd bamboo-adl-benchmarks
 export PYTHONPATH=$PYTHONPATH:$(pwd) # to allow importing shared code from adl_benchmarks.py
-bambooRun -m exN.py:ADLBencharkN adl_benchmarks.yml -o out_N
+bambooRun -m exN.py:BenchmarkN adl_benchmarks.yml -o out_N
 ```
 (replacing N by the numer of the benchmark).
 The resulting histograms will be stored in `out_N/results/SingleMuon_test.root`.
