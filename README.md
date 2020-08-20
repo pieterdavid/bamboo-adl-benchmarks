@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pieterdavid/bamboo-docker/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fpieterdavid%252Fbamboo-adl-benchmarks%26urlpath%3Dlab%252Ftree%252Fbamboo-adl-benchmarks%252Fex1.py%26branch%3Dmaster)
 
-These can be run on Binder through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html); [plotIt](https://github.com/cp3-llbb/plotIt) is not required) with:
+These can be run on [Binder](https://mybinder.readthedocs.io/en/latest/) through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html); [plotIt](https://github.com/cp3-llbb/plotIt) is not required) with:
 ```bash
 cd bamboo-adl-benchmarks
 export PYTHONPATH=$PYTHONPATH:$(pwd) # to allow importing shared code from adl_benchmarks.py
